@@ -103,18 +103,6 @@
 		padding: 50px 30px;
 	}
 
-	#resume {
-		background-color: #272829;
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 50%;
-		z-index: 300;
-		transform: translateX(-100%);
-		color: white;
-	}
-
 	.split {
 		width: 50%;
 		height: 100%;
