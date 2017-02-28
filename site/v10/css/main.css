@@ -1,0 +1,293 @@
+/* -------------------------------------------
+DESKTOP
+---------------------------------------------- */
+
+
+
+/* GENERAL */
+	
+	* {
+		box-sizing: border-box; }
+
+	html {
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility; }
+
+	body, html {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0; }
+
+
+
+/* COMPOSITION */
+
+	header, #baseline {
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		background-color: #ffffff;
+		left: 0;
+		z-index: 1;
+		padding: 0 30px; }
+
+	header {
+		top: 0; }
+
+		header.about-active {
+			background-color: transparent; }
+
+		.home {
+			display: inline-block;
+			width: 70px;
+			margin-top: 15px; }
+
+		.contact-link {
+			float: right;
+			display: inline-block; }
+
+	#baseline {
+		bottom: 0; }
+
+		#baseline.about-active {
+			background-color: transparent; }
+
+		#baseline.study-active {
+			visibility: hidden; }
+
+
+
+/* TYPOGRAPHY */
+
+	body {
+		color: #252729;
+		font-family: 'Lato', sans-serif; }
+
+	.serif {
+		font-family: 'Noto Serif', serif;
+		font-style: italic;
+		font-size: .95em;
+		letter-spacing: -2px;
+		font-weight: 700;
+	}
+
+	h1 {
+		font-size: 2em;
+		line-height: 1.3;
+		letter-spacing: -1.5px;
+		font-weight: 400; }
+
+	h2 {
+		font-size: 1.6em;
+		line-height: 1.4;
+		letter-spacing: -.5px;
+		font-weight: 400; }
+
+	h3 {
+		font-size: 1.2em;
+		line-height: 1.5;
+		letter-spacing: -.5px;
+		font-weight: 400;
+		color: #434547; }
+
+	.link {
+		font-size: 0.7em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.2px;
+		display: inline-block;
+		line-height: 50px;
+		cursor: pointer; }
+
+	.brand-link {
+		text-decoration: none;
+		border-bottom: 1px dotted #252729;
+		color: inherit; }
+
+		.brand-link:hover {
+			color: #000000; }
+
+	.about-type-1 {
+		color: #818385;
+		line-height: 1.6; }
+
+	.about-type-2 {
+		color: #818385;
+		line-height: 1.6;
+		font-size: .9em; }
+
+	.about-brand-link {
+		color: #b7b7b7;
+		border-bottom: 1px dotted #b7b7b7; }
+
+		.about-brand-link:hover {
+			color: #ffffff;
+			border-bottom: 1px dotted #ffffff; }
+
+	.about-date-type {
+		color: #ffffff;
+		font-size: 0.8em;
+		font-weight: 700; }
+
+	.about-link {
+		position: absolute;
+		visibility: visible; }
+
+		.about-link.about-active {
+			visibility: hidden; }
+
+		.about-link.study-active {
+			visibility: hidden; }
+
+	.hide-link {
+		position: absolute;
+		visibility: hidden;
+		color: #ffffff; }
+
+		.hide-link.about-active {
+			visibility: visible; }
+
+	.heavy {
+		font-weight: 700; }
+
+/* WRAPPER */
+
+	#wrapper {
+		height: 100%;
+		width: 100%; }
+
+
+
+/* MAIN */
+
+	#main {
+		height: 100%;
+		width: 100%;
+		top: 0; left: 0;
+		position: relative;
+		transition: .6s cubic-bezier(.5,.01,.19,.91); }
+
+		#main.about-active {
+			left: 50%;
+			opacity: .1; }
+
+		#main.rm-study-active {
+			left: -50%; }
+
+		#main.ms-study-active {
+			left: -50%; }
+
+		.vheight {
+			height: calc(100% - 100px);
+			width: 100%; 
+			position: relative;}
+
+		#landing { 
+			margin: 50px 0; }
+
+			.inner {
+				top: 50%;
+				position: absolute;
+				transform: translateY(-50%);
+				padding: 0 5em; }
+
+		#rightmove {
+			margin-bottom: 30px; }
+
+		#microsoft {
+			margin-bottom: 30px; }
+
+			.project {
+				height: 100%;
+				width: 50%;
+				float: left; }
+
+				.overview { }
+
+				.rm-hero, .ms-hero {
+					background-color: #f7f6f5; }
+
+					
+
+		#context {
+			width: 100%;
+			position: relative; }
+
+			.context-type {
+				float: left;
+				width: 50%;
+				padding: 5em;
+				background-color: #f7f6f5; }
+
+
+
+/* ABOUT */
+
+	#about {
+		height: 100%;
+		position: fixed;
+		width: 50%;
+		background-color: #111111;
+		top: 0;
+		left: -50%;
+		transition: .6s cubic-bezier(.5,.01,.19,.91);
+		color: #ffffff; }
+
+		#about.about-active {
+			left: 0; }
+
+
+
+/* WORK */
+
+	#work { }
+
+		.study {
+			width: 50%;
+			top: 0; }
+
+			#rm {
+				left: 100%;
+				padding: 0 5em;
+				top: 50%;
+				position: fixed;
+				transition: .6s cubic-bezier(.5,.01,.19,.91); }
+
+				#rm.rm-study-active {
+					left: 50%;
+					position: absolute; }
+
+			#ms {
+				left: 100%;
+				padding: 0 5em;
+				top: 50%;
+				position: fixed;
+				transition: .6s cubic-bezier(.5,.01,.19,.91); }
+
+				#ms.ms-study-active {
+					left: 50%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

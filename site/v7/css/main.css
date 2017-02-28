@@ -1,0 +1,151 @@
+
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+	}
+
+	body, html {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav {
+		width: 100%;
+		height: 50px;
+		background-color: red;
+		opacity: .5;
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		z-index: 100;
+	}
+
+	.link {
+		display: inline-block;
+		margin-left: 50px;
+		margin-top: 17px;
+		text-align: center;
+		color: white;
+		font-weight: 700;
+	}
+
+
+
+
+
+
+
+
+
+
+	#wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.study {
+
+	}
+
+		#main {
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+
+		#main.off {
+			left: 50%;
+		}
+
+			#landing {
+				background-color: green;
+				width: 100%;
+				height: 100%;
+			}
+
+			#projectone {
+				background-color: blue;
+				width: 100%;
+				height: 100%;
+			}
+
+				.container {
+					height: 100%;
+					width: 50%;
+					float: left;
+				}
+
+				#poster1 {
+					background-color: red;
+					position: absolute;
+					left: 50%;
+					opacity: 1;
+					z-index: 9;
+				}
+
+				#poster1.on {
+					left: 0;
+					position: fixed;
+					top: 0;
+				}
+
+				#poster2 {
+					background-color: black;
+					position: absolute;
+					left: 50%;
+					opacity: .5;
+					transition: .9s cubic-bezier(.5,.01,.19,.91);
+				}
+
+				#poster2.on {
+					left: 0;
+					position: fixed;
+					top: 0;
+				}
+
+			#projecttwo {
+				background-color: yellow;
+				width: 100%;
+				height: 100%;
+			}
+
+		#resume {
+			height: 100%;
+			width: 50%;
+			position: fixed;
+			left: -50%;
+			background-color: black;
+			z-index: 1;
+			transition: .7s cubic-bezier(.5,.01,.19,.91);
+		}
+
+		#resume.on {
+			left: 0;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

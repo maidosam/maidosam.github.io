@@ -3,6 +3,8 @@ $(window).on('load', function() {
 	$(".ResumeLink").on('click', function() {
 		$("#about").toggleClass('slide-in');
 		$("#main").toggleClass('slide-in');
+
+
 		
 	});
 
