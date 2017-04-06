@@ -324,7 +324,61 @@ header {
 		padding: 4.8em 0;
 	}
 
-/* ///////////// DEVICES @ 1440px ///////////// */
+/* ///////////// DEVICES OVER 1750px ///////////// */
+
+@media only screen and (min-width: 1750px) {
+
+	#landing-primary {
+		padding: 0 4.8em;
+	}
+
+		#landing-primary-strapline {
+			top: 4.8em;
+		}
+
+		#landing-primary-nav {
+			bottom: 4.8em;
+		}
+
+	.cs-rightmove {
+		padding: 4.8em;
+	}
+
+		.cs-information {
+			margin: 4.8em 0;
+		}
+
+		.cs-overview {
+			padding: 15em 0;
+		}
+
+	.cs-image-wrapper {
+		margin-top: 4.8em;
+	}
+
+		.cs-image-multi {
+			width: calc(70% - 4.8em);
+		}
+
+		.cs-copyblock-multi-l {
+			margin-right: 4.8em;
+		}
+
+		.cs-copyblock-multi-r {
+			margin-left: 4.8em
+		}
+
+	.cs-copyblock-wrapper {
+		margin: 2.4em 0 9.6em 0;
+	}
+
+	.cs-multi-wrapper {
+		margin: 4.8em 0;
+	}
+
+}
+
+/* ///////////// DEVICES UNDER 1440px ///////////// */
 
 @media only screen and (max-width: 1440px) {
 
@@ -334,7 +388,7 @@ header {
 
 }
 
-/* ///////////// DEVICES @ 1440px ///////////// */
+/* ///////////// DEVICES UNDER 1440px ///////////// */
 
 @media only screen and (max-width: 1280px) {
 
@@ -343,7 +397,7 @@ header {
 	}
 }
 
-/* ///////////// DEVICES @ 1024px ///////////// */
+/* ///////////// DEVICES UNDER 1024px ///////////// */
 
 @media only screen and (max-width: 1024px) {
 
@@ -357,7 +411,7 @@ header {
 
 }
 
-/* ///////////// DEVICES @ 768px ///////////// */
+/* ///////////// DEVICES UNDER 768px ///////////// */
 
 @media only screen and (max-width: 768px) {
 
@@ -395,7 +449,7 @@ header {
 
 }
 
-/* ///////////// DEVICES @ 520px ///////////// */
+/* ///////////// DEVICES UNDER 520px ///////////// */
 
 @media only screen and (max-width: 520px) {
 
@@ -438,12 +492,12 @@ header {
 		}
 }
 
-/* ///////////// DEVICES @ 400px ///////////// */
+/* ///////////// DEVICES UNDER 400px ///////////// */
 
 @media only screen and (max-width: 400px) {
 
 	h1 {
-		font-size: 1.5em;
+		font-size: 1.75em;
 	}
 
 	h2 {
@@ -486,6 +540,14 @@ header {
 		margin-top: 1.2em;
 	}
 
+		.cs-copyblock-multi-l {
+			margin: 0 0 1.2em 0;
+		}
+
+		.cs-copyblock-multi-r {
+			margin: 1.2em 0 2.4em 0;
+		}
+
 	.cs-copyblock-wrapper {
 		margin: 1.2em 0 2.4em 0;
 	}
@@ -493,8 +555,6 @@ header {
 	.cs-multi-wrapper {
 		margin: 1.2em 0;
 	}
-
-
 
 }
 
