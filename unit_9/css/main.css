@@ -264,7 +264,7 @@ header {
 	}
 
 	.cs-final-block {
-		margin-bottom: 200px;
+		margin-bottom: 12.4em;
 	}
 
 	/* CS IMAGES */
@@ -324,9 +324,10 @@ header {
 	/* CS CTA */
 
 	.cs-cta {
-		height: 100px;
+		height: 10em;
 		width: 100%;
 		background-color: #f5f5f5;
+		border-top: 1px solid #e5e5e5;
 		bottom: 0;
 		position: fixed;
 	}
