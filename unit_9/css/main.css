@@ -106,7 +106,8 @@ h3 {
 	}
 
 		.type-brand-link:hover {
-			opacity: .5;
+			color: #1169b6;
+			border-bottom: 1px dashed #1169b6;
 		}
 
 	.type-align-right {
