@@ -248,11 +248,13 @@ header {
 				width: 50%;
 			}
 
-	/* CS IMAGES */
+	/* CS WRAPPERS */
 
 	.cs-image-wrapper {
 		margin-top: 2.4em;
 	}
+
+	/* CS IMAGES */
 
 	.cs-image-one {
 		width: 100%;
@@ -267,9 +269,7 @@ header {
 		float: left;
 	}
 
-		.cs-image-two:last-of-type {
-			margin-right: 0;
-		}
+	.cs-image-two:last-of-type { margin-right: 0; }
 
 	.cs-image-three {
 		width: calc(100% / 3 - .8em);
@@ -278,9 +278,13 @@ header {
 		height: auto;
 	}
 
-		.cs-image-three:last-of-type {
-			margin-right: 0;
-		}
+	.cs-image-three:last-of-type { margin-right: 0; }
+
+	.cs-image-multi {
+		width: calc(70% - 1.2em);
+		height: auto;
+		float: left;
+	}
 
 	/* CS COPY */
 
@@ -296,22 +300,31 @@ header {
 		vertical-align: top;
 	}
 
-		.cs-copyblock:last-of-type {
-			margin-right: 0;
+	.cs-copyblock:last-of-type { margin-right: 0; }
+
+		.cs-copyblock-multi {
+			width: 30%;
+			float: left;
+			margin-right: 1.2em;
 		}
 
-		.cs-quote {
-			max-width: 800px;
-			margin: 4.8em auto;
-		}
+	.cs-quote {
+		max-width: 800px;
+		margin: 4.8em auto;
+	}
 
 	/* CS MULTIBLOCK */
 
-	.cs-multiblock-outer {
+	.cs-multi-wrapper {
 		width: 100%;
-		height: 75%;
-		background-color: #fff;
+		margin: 2.4em 0;
 	}
+
+		
+
+		
+
+
 
 		.cs-multiblock-copy {
 			width: 25%;
