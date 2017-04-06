@@ -135,7 +135,7 @@ h4 {
 			border-bottom: none;
 		}
 
-	.type-align-right { text-align: right; }
+	.type-info { text-align: right; }
 
 /* HEADER */
 
@@ -385,7 +385,55 @@ header {
 		width: 100%;
 	}
 
+		.cs-copyblock-multi-l {
+			margin: 0 0 2.4em 0;
+		}
+
+		.cs-copyblock-multi-r {
+			margin: 2.4em 0 0 0;
+		}
+
 }
+
+/* ///////////// DEVICES @ 520px ///////////// */
+
+@media only screen and (max-width: 520px) {
+
+	h1 {
+		font-size: 2em;
+	}
+
+		.type-info {
+			text-align: left;
+		}
+
+	#landing-primary {
+		width: 98%;
+	}
+
+	#landing-secondary {
+		width: 2%;
+	}
+
+	.cs-image-two {
+		width: 100%;
+		margin-bottom: 1.2em;
+	}
+
+		.cs-image-two:last-of-type {
+			margin-bottom: 0;
+		}
+
+	.cs-image-three {
+		width: 100%;
+		margin-bottom: 1.2em;
+	}
+
+		.cs-image-three:last-of-type {
+			margin-bottom: 0;
+		}
+}
+
 
 
 
