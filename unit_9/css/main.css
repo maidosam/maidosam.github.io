@@ -454,6 +454,48 @@ header {
 			font-size: 1.25em;
 		}
 
+	#landing-primary {
+		padding: 0 1.2em;
+	}
+
+		#landing-primary-strapline {
+			top: 1.2em;
+		}
+
+		#landing-primary-nav {
+			bottom: 1.2em;
+		}
+
+	.cs-rightmove {
+		padding: 1.2em;
+	}
+
+		.cs-information {
+			margin: 1.2em 0;
+		}
+
+		.cs-overview {
+			padding: 9em 0;
+		}
+
+		.cs-overview-info {
+			margin-top: 1.2em;
+		}
+
+	.cs-image-wrapper {
+		margin-top: 1.2em;
+	}
+
+	.cs-copyblock-wrapper {
+		margin: 1.2em 0 2.4em 0;
+	}
+
+	.cs-multi-wrapper {
+		margin: 1.2em 0;
+	}
+
+
+
 }
 
 
