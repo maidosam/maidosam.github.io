@@ -1,5 +1,9 @@
+/* IMPORT */
+
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i');
+
+/* GENERAL */
 
 * {
 	box-sizing: border-box;
@@ -21,6 +25,13 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 }
+
+#wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+/* TYPE */
 
 h1 {
 	font-size: 2.25em;
@@ -65,7 +76,7 @@ h3 {
 	}
 
 	.type-cs-cta {
-		color: #1c1c1c;
+		color: #ffffff;
 	}
 
 	.type-mail-link {
@@ -114,10 +125,7 @@ h3 {
 		text-align: right;
 	}
 
-#wrapper {
-	height: 100%;
-	width: 100%;
-}
+/* HEADER */
 
 header {
 	background-color: #ffffff;
@@ -136,6 +144,8 @@ header {
 		cursor: pointer;
 	}
 
+/* SITE CONTENT */
+
 #site-content {
 	height: 100%;
 	width: calc(100% - 42px);
@@ -145,10 +155,13 @@ header {
 	position: relative;
 }
 
+/* LANDING */
+
 #landing {
 	height: 100%;
 	width: 100%;
 	position: relative;
+	background-color: #fff;
 }
 
 	#landing-primary {
@@ -193,13 +206,13 @@ header {
 #case-studies {
 	height: 100%;
 	width: 100%;
-	margin-top: 1.2em;
 	position: relative;
 }
 
 	.cs-rightmove {
 			height: 100%;
 			width: 100%;
+			margin-bottom: 5.8em;
 		}
 
 	/* CS OVERVIEW */
@@ -207,11 +220,13 @@ header {
 	.cs-information-outer {
 		width: 100%;
 		padding: 1.2em 2.4em;
+		background-color: #fff;
 	}
 
 	.cs-overview-outer {
 		width: 100%;
 		padding: 1.2em 2.4em;
+		background-color: #fff;
 	}
 
 		.cs-overview-inner {
@@ -230,6 +245,7 @@ header {
 		height: 75%;
 		width: 100%;
 		padding: 1.2em 2.4em;
+		background-color: #fff;
 	}
 
 		.cs-element-inner {
@@ -274,6 +290,7 @@ header {
 	.cs-copyblock-outer {
 		width: 100%;
 		padding: 1.2em 2.4em 4.8em 2.4em;
+		background-color: #fff;
 	}
 
 		.cs-copyblock-inner {
@@ -286,6 +303,7 @@ header {
 			.cs-quote-outer {
 				width: 100%;
 				padding: 4.8em 2.4em 4.8em 2.4em;
+				background-color: #fff;
 			}
 
 				.cs-quote-inner {
@@ -299,6 +317,7 @@ header {
 		width: 100%;
 		height: 75%;
 		padding: 1.2em 2.4em 4.8em 2.4em;
+		background-color: #fff;
 	}
 
 		.cs-multiblock-copy {
@@ -320,17 +339,19 @@ header {
 	.cs-cta-outer {
 		width: 100%;
 		padding: 2.4em 0 2.4em 0;
-		background-color: #fafafa;
-		border-top: 1px solid #f5f5f5;
+		background-color: #1169b6;
+		bottom: 0;
+		position: fixed;
 		cursor: pointer;
+		z-index: -1;
 	}
-
-		.cs-cta-outer:hover {
-			opacity: .7;
-		}
 
 		.cs-cta-inner {
 			text-align: center;
+		}
+
+		.cs-final-margin {
+			margin-bottom: 5.8em;
 		}
 
 	/* CS STYLING */
@@ -338,6 +359,7 @@ header {
 	.cs-hr-outer {
 		width: 100%;
 		padding: 1.2em 2.4em;
+		background-color: #fff;
 	}
 
 		hr {
