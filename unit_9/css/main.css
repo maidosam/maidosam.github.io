@@ -31,6 +31,15 @@ body {
 	width: 100%;
 }
 
+.clearfix:after {
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
 /* TYPE */
 
 h1 {
@@ -212,66 +221,55 @@ header {
 	.cs-rightmove {
 			height: 100%;
 			width: 100%;
+			padding: 2.4em;
 			margin-bottom: 5.8em;
 		}
 
 	/* CS OVERVIEW */
 
-	.cs-information-outer {
+	.cs-information {
 		width: 100%;
-		padding: 1.2em 2.4em;
 		background-color: #fff;
+		margin: 2.4em 0;
 	}
 
-	.cs-overview-outer {
+	.cs-overview {
 		width: 100%;
-		padding: 1.2em 2.4em;
+		padding: 12em 0;
 		background-color: #fff;
 	}
-
-		.cs-overview-inner {
-			margin: 12em 0;
-		}
 
 			.cs-overview-title, .cs-overview-info {
-				display: inline-block;
+				float: left;
 				vertical-align: top;
-				width: 49%;
+				width: 50%;
 			}
 
-	/* CS ELEMENT */
+	/* CS IMAGES */
 
-	.cs-element-outer {
-		height: 75%;
-		width: 100%;
-		padding: 1.2em 2.4em;
-		background-color: #fff;
+	.cs-image-wrapper {
+		margin-top: 2.4em;
 	}
 
-		.cs-element-inner {
-			height: 100%;
-			width: 100%;
-		}
-
-	/* CS IMAGERY */
-
-	.cs-image-full {
+	.cs-image-one {
 		width: 100%;
-		height: 100%;
-		background-color: #f5f5f5;
+		height: auto;
+		float: left;
 	}
 
-	.cs-image-split {
+	.cs-image-two {
 		width: calc(50% - .6em);
-		height: 100%;
+		height: auto;
 		margin-right: 1.2em;
 		float: left;
-		background-color: #f5f5f5;
 	}
 
-		.cs-image-split:last-of-type {
+		.cs-image-two:last-of-type {
 			margin-right: 0;
 		}
+
+
+	/* CS IMAGERY */
 
 	.cs-image-trio {
 		width: calc(100% / 3 - .8em);
@@ -287,36 +285,34 @@ header {
 
 	/* CS COPY */
 
-	.cs-copyblock-outer {
+	.cs-copyblock-wrapper {
 		width: 100%;
-		padding: 1.2em 2.4em 4.8em 2.4em;
-		background-color: #fff;
+		margin: 2.4em 0 4.8em 0;
 	}
 
-		.cs-copyblock-inner {
-			width: 30%;
-			margin-right: 2.4em;
-			display: inline-block;
-			vertical-align: top;
+	.cs-copyblock {
+		width: 30%;
+		margin-right: 2.4em;
+		float: left;
+		vertical-align: top;
+	}
+
+		.cs-quote-outer {
+			width: 100%;
+			padding: 4.8em 0;
+			background-color: #fff;
 		}
 
-			.cs-quote-outer {
-				width: 100%;
-				padding: 4.8em 2.4em 4.8em 2.4em;
-				background-color: #fff;
+			.cs-quote-inner {
+				max-width: 800px;
+				margin: 0 auto;
 			}
-
-				.cs-quote-inner {
-					max-width: 800px;
-					margin: 0 auto;
-				}
 
 	/* CS MULTIBLOCK */
 
 	.cs-multiblock-outer {
 		width: 100%;
 		height: 75%;
-		padding: 1.2em 2.4em 4.8em 2.4em;
 		background-color: #fff;
 	}
 
@@ -336,7 +332,7 @@ header {
 
 	/* CS CTA */
 
-	.cs-cta-outer {
+/*	.cs-cta-outer {
 		width: 100%;
 		padding: 2.4em 0 2.4em 0;
 		background-color: #1169b6;
@@ -352,19 +348,14 @@ header {
 
 		.cs-final-margin {
 			margin-bottom: 5.8em;
-		}
+		}*/
 
 	/* CS STYLING */
 
-	.cs-hr-outer {
+	hr {
+		border: 1px solid #f5f5f5;
 		width: 100%;
-		padding: 1.2em 2.4em;
-		background-color: #fff;
 	}
-
-		hr {
-			border: 1px solid #f5f5f5;
-		}
 
 
 
@@ -427,8 +418,8 @@ header {
 		font-size: 15px;
 	}
 
-	.cs-copyblock-inner {
-		width: 45%;
+	.cs-copyblock {
+		width: 50%;
 	}
 
 }
@@ -445,7 +436,7 @@ header {
 		width: 10%;
 	}
 
-	.cs-copyblock-inner {
+	.cs-copyblock {
 		display: block;
 		width: 100%;
 	}
